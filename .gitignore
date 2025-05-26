@@ -19,6 +19,7 @@ MemoryCaptures/
 *.pdb
 *.opendb
 *.VC.db
+*.mp4
 
 .vscode/
 .DS_Store
