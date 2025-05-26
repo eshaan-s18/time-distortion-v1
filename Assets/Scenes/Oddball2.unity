@@ -248,6 +248,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1680501587, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig)
@@ -373,7 +377,7 @@ Transform:
   m_GameObject: {fileID: 897868086}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4999999, z: 1.9919999}
+  m_LocalPosition: {x: 0, y: 0, z: 1.9919999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -394,12 +398,12 @@ MonoBehaviour:
   redCubePrefab: {fileID: 8057053807382467316, guid: 0fbb43139a25645219e00074cdc633a3, type: 3}
   greenCubePrefab: {fileID: 8057053807382467316, guid: ff960c28272804885b6c6cff7b7bc3f8, type: 3}
   center: {fileID: 1790304218}
-  numberOfCubes: 18
-  radius: 2
+  numberOfCubes: 27
+  radius: 3
   baseHeight: 0.33
   rowSpacing: 0.5
-  numberOfRows: 5
-  orbitSpeed: 40
+  numberOfRows: 7
+  orbitSpeed: 30
   flashingRedMaterial: {fileID: 2100000, guid: e9df27320e4a04c808de4969009dc37d, type: 2}
   baseFlashMaterial: {fileID: 2100000, guid: a4b15b2a3c7d147bba3384abe5c97f82, type: 2}
   oddballAudio: {fileID: 8300000, guid: b13a87d78dcc2416f9d73d617b22f7c7, type: 3}
