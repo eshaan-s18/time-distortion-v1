@@ -367,7 +367,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_MaterialPropertyBlockHelper: {fileID: 7374001029244844217}
-  m_ColorPropertyName: _RimColor
+  m_ColorPropertyName: _BaseColor
 --- !u!1 &8057053807382467316
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,7 +19,15 @@ public class FlashRed : MonoBehaviour
 
         instanceMaterial.EnableKeyword("_EMISSION");
 
-        baseEmissionColor = instanceMaterial.GetColor("_EmissionColor");
+        if (instanceMaterial.HasProperty("_EmissionColor"))
+        {
+            baseEmissionColor = instanceMaterial.GetColor("_EmissionColor");
+        }
+        else
+        {
+            baseEmissionColor = Color.red; // fallback if missing
+        }
+
     }
 
     void Update()
