@@ -403,7 +403,7 @@ MonoBehaviour:
   baseHeight: 0.33
   rowSpacing: 0.5
   numberOfRows: 7
-  orbitSpeed: 30
+  orbitSpeed: 10
   flashingRedMaterial: {fileID: 2100000, guid: e9df27320e4a04c808de4969009dc37d, type: 2}
   baseFlashMaterial: {fileID: 2100000, guid: a4b15b2a3c7d147bba3384abe5c97f82, type: 2}
   oddballAudio: {fileID: 8300000, guid: b13a87d78dcc2416f9d73d617b22f7c7, type: 3}
