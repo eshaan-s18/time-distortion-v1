@@ -361,6 +361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 897868088}
   - component: {fileID: 897868089}
+  - component: {fileID: 897868090}
   m_Layer: 0
   m_Name: OrbitManager
   m_TagString: Untagged
@@ -407,6 +408,19 @@ MonoBehaviour:
   flashingRedMaterial: {fileID: 2100000, guid: e9df27320e4a04c808de4969009dc37d, type: 2}
   baseFlashMaterial: {fileID: 2100000, guid: a4b15b2a3c7d147bba3384abe5c97f82, type: 2}
   oddballAudio: {fileID: 8300000, guid: b13a87d78dcc2416f9d73d617b22f7c7, type: 3}
+--- !u!114 &897868090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897868086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6664a19a169094bd0b04e89223fe6919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitTime: 15
 --- !u!1 &987488370
 GameObject:
   m_ObjectHideFlags: 0

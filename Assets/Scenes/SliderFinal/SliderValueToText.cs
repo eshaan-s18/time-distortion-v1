@@ -37,14 +37,25 @@ public class SliderValueToText : MonoBehaviour
     void UpdateText(float value)
     {
         // "f2" limits the decimal places to 2. Use "f0" for whole numbers.
-        textElement.text = prefix + value.ToString("f0") + suffix;
+        textElement.text = prefix + '\n' + value.ToString("f0") + suffix;
     }
 
     public void SaveCurrentValue()
     {
-        int valToSave = (int)slider.value;
-        savedValues.Add(valToSave);
-        
-        Debug.Log($"Value {valToSave} saved! Total items in list: {savedValues.Count}");
-    } 
+        int valToSave = Mathf.RoundToInt(slider.value);
+
+        if (GameDirector.Instance != null)
+        {
+            // 1. Save the final value
+            GameDirector.Instance.savedValuesFromSession.Add(valToSave);
+            Debug.Log($"Successfully saved {valToSave} to GameDirector!");
+            Debug.Log("Current List: " + string.Join(", ", GameDirector.Instance.savedValuesFromSession));
+            
+            GameDirector.Instance.LoadNextScene();
+        }
+        else
+        {
+            Debug.LogError("Could not find GameDirector!");
+        }
+}
 }
